@@ -108,4 +108,37 @@ body {
 .post-tags p {
   margin: 0 10px 0 0;
 }
+
+ul.list.tags li {
+  display: inline-block;
+  padding: 10px;
+}
+
+ul.list.tags li a {
+  text-decoration: none;
+}
+
+ul.list.tags li .active {
+  color: red;
+}
+
+.tag-size-1 {
+  font-size: 12px;
+}
+
+.tag-size-2 {
+  font-size: 15px;
+}
+
+.tag-size-3 {
+  font-size: 20px;
+}
+
+.tag-size-4 {
+  font-size: 25px;
+}
+
+.tag-size-5 {
+  font-size: 31px;
+}
 /*# sourceMappingURL=style.css.map */
