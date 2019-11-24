@@ -3,6 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>BLOG</title>
+	<script id="template-article-link" type="text/x-handlebars-template">
+	  <li><a href="#{{ id }}"><span>{{ title }}</span></a></li>
+	</script>
+	<script id="template-tag-link" type="text/x-handlebars-template">
+	  <li><a href="#tag-{{ tag }}">{{ tag }}</a></li>
+	</script>
+	<script id="template-author-link" type="text/x-handlebars-template">
+	  by <a href="#author-{{ author }}">{{ author }}</a>
+	</script>
+	<script id="template-tag-cloud-link" type="text/x-handlebars-template">
+		{{#each tags}}
+			<li><a class="{{ className }}" href="#tag-{{ tag }}">{{ tag }}</a></li>
+		{{/each}}
+	</script>
+	<script id="template-author-list-link" type="text/x-handlebars-template">
+		{{#each authors}}
+			<li><a href="#author-{{ author }}">{{ author }} ({{ count }})</a></li>
+		{{/each}}
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,10 +31,7 @@
   <div class="container">
     <h1 class="logo">my blog</h1>
     <main class="wrapper">
-	
-	
-	
-	
+
       <aside class="sidebar">
 		<p><a href="index.html">Resetuj Filtr</a></p>
         <h2 class="section-title">All posts</h2>
